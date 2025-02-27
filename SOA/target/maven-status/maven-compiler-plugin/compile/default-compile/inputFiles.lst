@@ -1,0 +1,10 @@
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/java/gRPC/CalculatorRequestOrBuilder.java
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/java/gRPC/CalculatorResponse.java
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/grpc-java/gRPC/CalculatorServiceGrpc.java
+/Users/sonnguyen/Workspace/2023/SOA/src/main/java/RMI/RMIClient.java
+/Users/sonnguyen/Workspace/2023/SOA/src/main/java/RMI/Calculator.java
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/java/gRPC/Calculator.java
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/java/gRPC/CalculatorRequest.java
+/Users/sonnguyen/Workspace/2023/SOA/target/generated-sources/protobuf/java/gRPC/CalculatorResponseOrBuilder.java
+/Users/sonnguyen/Workspace/2023/SOA/src/main/java/RMI/RMIServer.java
+/Users/sonnguyen/Workspace/2023/SOA/src/main/java/RMI/CalculatorImpl.java
