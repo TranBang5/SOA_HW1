@@ -1,0 +1,23 @@
+<jmeterTestPlan>
+    <hashTree>
+        <TestPlan>
+            <hashTree>
+                <ThreadGroup>
+                    <stringProp name="ThreadGroup.num_threads">50</stringProp>
+                    <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+                    <stringProp name="ThreadGroup.duration">60</stringProp>
+                </ThreadGroup>
+                <hashTree>
+                    <JSR223Sampler>
+                        <stringProp name="script">
+                            import java.rmi.Naming;
+                            def service = Naming.lookup("rmi://rmi-service:1099/OrderService")
+                            def total = service.calculateTotal("P001", 5)
+                            vars.put("total_price", total.toString())
+                        </stringProp>
+                    </JSR223Sampler>
+                </hashTree>
+            </hashTree>
+        </TestPlan>
+    </hashTree>
+</jmeterTestPlan>

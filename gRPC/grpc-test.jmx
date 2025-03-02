@@ -1,0 +1,21 @@
+<jmeterTestPlan>
+    <hashTree>
+        <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="gRPC Load Test" enabled="true">
+            <hashTree>
+                <ThreadGroup testclass="ThreadGroup" enabled="true">
+                    <stringProp name="ThreadGroup.num_threads">50</stringProp>
+                    <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+                    <stringProp name="ThreadGroup.duration">60</stringProp>
+                </ThreadGroup>
+                <hashTree>
+                    <grpc-sampler>
+                        <stringProp name="ServerName">grpc-service</stringProp>
+                        <stringProp name="Port">50051</stringProp>
+                        <stringProp name="Method">OrderService/CalculateTotal</stringProp>
+                        <stringProp name="RequestData">{"product_id": "P001", "quantity": 5}</stringProp>
+                    </grpc-sampler>
+                </hashTree>
+            </hashTree>
+        </TestPlan>
+    </hashTree>
+</jmeterTestPlan>
